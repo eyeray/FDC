@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/1180gs.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-compents.css">
     <link rel="shortcut icon" href="images/favicon.png">
 </head>
 <body>
@@ -17,9 +18,9 @@
             <h1 class="col-4 float_left logo"><img src="images/logo.png" alt="사람과 인물중심 지역미디어 파주 人 해피코리아"></h1>
             <div class="col-5 pre-6 search-bar">
                 <form action="/">
-                    <label for="search"></label>
+                    <label for="search" class="a11y-hidden">검색</label>
                     <input type="text" id="search" class="search-input" placeholder="검색">
-                    <button><span class="a11y-hidden">검색하기</span></button>
+                    <button type="submit"><span class="a11y-hidden">검색하기</span></button>
                 </form>
             </div>
             <ul class="col-2 post-1 weather">
@@ -33,36 +34,16 @@
                     <li><a href="/">홈</a></li>
                     <li><a href="/">해코통통</a></li>
                     <li><a href="/">뉴스룸</a></li>
-                    <li><a href="/">인물&활동</a></li>
+                    <li><a href="/">인물&amp;활동</a></li>
                     <li><a href="/">여론조사</a></li>
                 </ul>
                 <div class="col-3 pre-4 login_join">
-                    <button>회원가입</button>
-                    <button>로그인</button>
+                    <button type="button">회원가입</button>
+                    <button type="button">로그인</button>
                 </div>
             </div>
         </nav>
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <mian class="page-main">
         <div class="container row guide">
@@ -78,7 +59,7 @@
                         <h5>기획&뉴스</h5>
                         <ul>
                             <li class="img-list">
-                            <a href="/">    
+                            <a href="/">
                                 <div class="thumb">
                                     <img src="images/PlanNews_thumb.jpg" alt="썸네일 이미지">
                                 </div>
@@ -214,34 +195,43 @@
                             <h6><span>진행중</span>12년만에 개편된 "주택용 전기요금" 당신의 선택은</h6>
                             <form action="">
                                 <ul>
+                                    <div class="custom-radio">
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <label for="answer-1" for="answer-1">
+                                        <input type="radio" name="research" id="answer-1">
+                                            재개편되어야 한다.
+                                            <span class="float_right">53.1% (15명)</span>
+                                        </label>
                                     </li>
+                                    </div>
+                                    <div class="custom-radio">
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <label for="answer-2" for="answer-2">
+                                        <input type="radio" name="research" id="answer-2">
+                                            재개편되어야 한다.
+                                            <span class="float_right">53.1% (15명)</span>
+                                        </label>
                                     </li>
+                                    </div>
+                                    <div class="custom-radio">
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <label for="answer-3" for="answer-3">
+                                        <input type="radio" name="research" id="answer-3">
+                                            재개편되어야 한다.
+                                            <span class="float_right">53.1% (15명)</span>
+                                        </label>
                                     </li>
+                                    </div>
+                                    <div class="custom-radio">
                                     <li>
-                                        <a href="">
-                                        <label for="answer1"></label>
-                                        <input type="radio" id="answer1">
-                                    재개편되어야 한다. <span class="float_right">53.1% (15명)</span>
-                                        </a>
+                                        <label for="answer-4" for="answer-4">
+                                        <input type="radio" name="research" id="answer-4">
+                                            재개편되어야 한다.
+                                            <span class="float_right">53.1% (15명)</span>
+                                        </label>
                                     </li>
+                                    </div>
+
                                 </ul>
                             </form>
                             <p>주택용 전기요금이 12년만에 전면 개편된다. 산업통상자원부는 현행 6단계 11.7배수로 설계된 주택용 전기요금 누진제를 3단계 6배수로 재설정하고 </p>
